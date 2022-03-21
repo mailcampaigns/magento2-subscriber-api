@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" type="MailCampaigns\SubscriberApi\Model\ResourceModel\SubscriberRepository"/>
+    <preference for="MailCampaigns\SubscriberApi\Api\Data\SubscriberSearchResultsInterface" type="MailCampaigns\SubscriberApi\Model\SubscriberSearchResults" />
+    <preference for="MailCampaigns\SubscriberApi\Api\Data\SubscriberInterface" type="MailCampaigns\SubscriberApi\Model\Api\Subscriber"/>
+    <type name="MailCampaigns\SubscriberApi\Model\ResourceModel\SubscriberRepository"/>
+</config>

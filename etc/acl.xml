@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+<acl>
+    <resources>
+        <resource id="Magento_Backend::admin">
+            <resource id="Magento_Backend::marketing">
+                <resource id="MailCampaigns_SubscriberApi::group" title="MailCampaigns" sortOrder="31">
+                    <resource id="MailCampaigns_SubscriberApi::config" title="Newsletter Subscriber API Extension" translate="title" />
+                </resource>
+            </resource>
+        </resource>
+    </resources>
+</acl>
+</config>

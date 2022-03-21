@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/subscribers" method="POST">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="create"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+    <route url="/V1/subscribers/:subscriberId" method="GET">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+    <route url="/V1/subscribers/searchByEmailAddress/:emailAddress" method="GET">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="getByEmailAddress"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+    <route url="/V1/subscribers/search" method="GET">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+    <route url="/V1/subscribers/:subscriberId" method="PUT">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="update"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+    <route url="/V1/subscribers/:subscriberId" method="DELETE">
+        <service class="MailCampaigns\SubscriberApi\Api\SubscriberRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="MailCampaigns_SubscriberApi::subscriber"/>
+        </resources>
+    </route>
+</routes>

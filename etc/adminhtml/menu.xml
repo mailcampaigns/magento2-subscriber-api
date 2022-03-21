@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MailCampaigns_SubscriberApi::group" title="MailCampaigns" sortOrder="30" module="MailCampaigns_SubscriberApi" resource="MailCampaigns_SubscriberApi::subscriber" parent="Magento_Backend::marketing"/>
+        <add id="MailCampaigns_SubscriberApi::info" title="Newsletter Subscribers API" action="mailcampaigns/info/index" module="MailCampaigns_SubscriberApi" resource="MailCampaigns_SubscriberApi::subscriber" parent="MailCampaigns_SubscriberApi::group"/>
+    </menu>
+</config>

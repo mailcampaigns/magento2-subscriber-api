@@ -15,7 +15,7 @@
         "AFL-3.0"
     ],
     "require": {
-        "php": "~7.3.0",
+        "php": "^7.3|^8.0",
         "magento/module-newsletter": "100.3.*"
     },
     "autoload": {

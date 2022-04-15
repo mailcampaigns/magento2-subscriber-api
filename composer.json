@@ -2,7 +2,7 @@
     "name": "mailcampaigns/module-subscriber-api",
     "description": "A module that extends the api to manage subscribers.",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "MailCampaigns",
@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "magento/module-newsletter": "100.3.*"
+        "magento/module-newsletter": "^100.3.*"
     },
     "autoload": {
         "files": [ "registration.php" ],

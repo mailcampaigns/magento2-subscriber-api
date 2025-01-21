@@ -1,6 +1,6 @@
 {
     "name": "mailcampaigns/module-subscriber-api",
-    "description": "A module that extends the api to manage subscribers.",
+    "description": "A module that extends the Magento 2 API to manage subscribers.",
     "type": "magento2-module",
     "version": "1.0.3",
     "authors": [
